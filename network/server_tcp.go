@@ -18,6 +18,7 @@ func main() {
 	for {
 		conn, err := listener.Accept()
 		checkError(err, "Accept: ")
+
 		go connectionHandler(conn)
 	}
 }
@@ -25,9 +26,12 @@ func main() {
 func initServer(hostAndPort string) *net.TCPListener {
 	serverAddr, err := net.ResolveTCPAddr("tcp", hostAndPort)
 	checkError(err, "Resolving address:port failed: '"+hostAndPort+"'")
+
 	listener, err := net.ListenTCP("tcp", serverAddr)
 	checkError(err, "ListenTCP: ")
+
 	println("Listening to: ", listener.Addr().String())
+
 	return listener
 }
 
@@ -42,10 +46,12 @@ func connectionHandler(conn net.Conn) {
 		switch err {
 		case nil:
 			handleMsg(length, err, ibuf)
+
 		default:
 			goto DISCONNECT
 		}
 	}
+
 DISCONNECT:
 	err := conn.Close()
 	println("Closed connection:", connFrom)
@@ -59,11 +65,6 @@ func talktoclients(to net.Conn) {
 
 func handleMsg(length int, err error, msg []byte) {
 	if length > 0 {
-		for i := 0; ; i++ {
-			if msg[i] == 0 {
-				break
-			}
-		}
 		fmt.Printf("Received data: %v", string(msg[0:length]))
 		fmt.Println("   length:", length)
 	}
