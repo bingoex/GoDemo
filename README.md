@@ -10,8 +10,8 @@ A series of go's demo
  - conn.RemoteAddr().String()
  - Write
  - Read
- - Close  
-
+ - Close
+ ---
  - net.DialUDP
  - net.UDPAddr
  - net.IPv4
@@ -25,11 +25,11 @@ A series of go's demo
  - cmd.Start
  - ioutil.ReadAll
  - cmd.Wait  
-
+ ---
  - net.Interfaces
  - inter.Addrs (inter is type \*Interface)
  - net.ParseCIDR  
-
+ ---
  - strings.Split
  - command.Output
  - select
