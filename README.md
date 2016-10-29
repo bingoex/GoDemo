@@ -42,7 +42,15 @@ A series of go's demo
  - fmt.Sscanf
  - strings.Contains
  
-
+## point
+ - unsafe.Pointer
+ - uintptr (type)
+ - syscall.RawSyscall
+ - sync.Once
+ - atomic.CompareAndSwapUint64
+ - atomic.StoreUint64
+ - atomic.LoadUint64
+ - atomic.AddUint64
 
  
 
