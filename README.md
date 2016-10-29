@@ -52,5 +52,10 @@ A series of go's demo
  - atomic.LoadUint64
  - atomic.AddUint64
 
+## panic
+ - defer
+ - panic
+ - recover
+
  
 
