@@ -67,5 +67,17 @@ A series of go's demo
 
 ## http
  - runtime.Stack
+ - http.ListenAndServe
+ - http.Error
+ - r.URL.Path (r is type \*http.Request)
+ - http.StatusInternalServerError
  
+## rpc
+ - net.Listen
+ - rpc.NewServer
+ - newServer.Register (newServer is type \*Server)
+ - newServer.ServeConn
+ - <br>
+ - rpc.Dial
+ - client.Call (client is type \*Client)
 
