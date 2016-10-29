@@ -35,6 +35,13 @@ A series of go's demo
  - select
  - time.After(timeout) (timeout is type \*time.Duration)
 
+## strings
+ - strings.Index
+ - strings.Split
+ - strings.Trim
+ - fmt.Sscanf
+ - strings.Contains
+ 
 
 
  
