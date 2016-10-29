@@ -57,5 +57,9 @@ A series of go's demo
  - panic
  - recover
 
+## channel
+ - make
+ - go
+
  
 
