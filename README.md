@@ -81,3 +81,15 @@ A series of go's demo
  - rpc.Dial
  - client.Call (client is type \*Client)
 
+## daemon srv
+ - flag.String
+ - log
+ - command
+ - strings.Split
+ - strings.Trim
+ - fmt.Sscanf
+ - strings.Contains
+ - ResolveUDPAddr
+ - ListenUDP
+ - ReadFromUDP
+ - WriteToUDP
