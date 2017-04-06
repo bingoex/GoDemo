@@ -58,6 +58,7 @@ A series of go's demo
  - recover
 
 ## channel
+ 管道demo
  - make
  - go
 
@@ -82,6 +83,7 @@ A series of go's demo
  - client.Call (client is type \*Client)
 
 ## daemon srv
+status进程（服务器、cmd、channel、正则表达式）
  - flag.String
  - log
  - command
@@ -90,6 +92,7 @@ A series of go's demo
  - fmt.Sscanf
  - strings.Contains
  - ResolveUDPAddr
- - ListenUDP
+ - net.ListenUDP
+ - net.ResolveUDPAddr
  - ReadFromUDP
  - WriteToUDP
