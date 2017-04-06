@@ -13,7 +13,7 @@ import (
 
 func GetInnerIp() string {
 	/*
-		cmdStr := "/bin/bash -c if'config eth1 | awk '/addr:/{sub(/addr:/,\"\",$2);print $2;exit}'"
+		cmdStr := "/bin/bash -c ifconfig eth1 | awk '/addr:/{sub(/addr:/,\"\",$2);print $2;exit}'"
 		cmdOutput, RunCmdErr := RunCmd(cmdStr, time.Duration(2*60)*time.Second)
 		if RunCmdErr != nil {
 			cmdOutput = ""

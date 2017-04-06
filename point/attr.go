@@ -1,7 +1,5 @@
 package attrapi
 
-// implementaton in pure go.
-//
 // Note: No need to detach memeory since shm willbe automatically detached en
 // process _exit(), refter to man(2) shmdt for more info
 

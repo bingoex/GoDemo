@@ -1,7 +1,8 @@
 # GoDemo
-A series of go's demo  
+提供一些列常用简单Demo及工具类库，旨在快速开发时提供参考
 
 ## network
+tcp\udp网络首发包demo
  - net.Dial
  - net.ResolveTCPAddr
  - net.ListenTCP
@@ -20,6 +21,7 @@ A series of go's demo
  - net.ListenUDP
 
 ## util
+ 工具类库（共享内存系统调用、获取本机内网ip，根据网卡名字获取ip，执行本机命令行）
  - exec.Command
  - cmd.StdoutPipe (cmd is type  \*cmd 
  - cmd.Start
@@ -34,15 +36,9 @@ A series of go's demo
  - command.Output
  - select
  - time.After(timeout) (timeout is type \*time.Duration)
-
-## strings
- - strings.Index
- - strings.Split
- - strings.Trim
- - fmt.Sscanf
- - strings.Contains
  
 ## point
+ 指针类、原子操作demo、系统调用
  - unsafe.Pointer
  - uintptr (type)
  - syscall.RawSyscall
@@ -67,6 +63,7 @@ A series of go's demo
  - json.Unmarshal
 
 ## http
+ http服务器demo
  - runtime.Stack
  - http.ListenAndServe
  - http.Error
@@ -83,16 +80,22 @@ A series of go's demo
  - client.Call (client is type \*Client)
 
 ## daemon srv
-status进程（服务器、cmd、channel、正则表达式）
+status进程（服务器、cmd、channel、正则表达式、字符串操作）
  - flag.String
- - log
- - command
- - strings.Split
- - strings.Trim
- - fmt.Sscanf
- - strings.Contains
  - ResolveUDPAddr
  - net.ListenUDP
  - net.ResolveUDPAddr
  - ReadFromUDP
+ - go
+ - defer/panic
+ - time.Second
+ - log
  - WriteToUDP
+ - exec.Cmd/exec.Command/command.Process.Kill
+ - time.After
+ - strings.Index
+ - strings.Split
+ - strings.Trim
+ - fmt.Sscanf
+ - strings.Contains
+ - goto
